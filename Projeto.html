@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APRENDENDO HTML</title>
+    <style>
+    body {
+      background-color: rgb(247, 219, 182);
+      font: rgb(70, 69, 69); font-family: Sans-serif;
+      p{font-size: 30px;} font-family: sans-serif; color: black;
+      
+    }   
+  </style>
+          
+</head>
+<body>
+    
+    <div align="center" style="background-color: black;">
+    <span>
+        <img src="imagem html.png" width="150px" alt="IMAGEM COM SIGLAS HTML"/>
+    </span>
+    <span>
+        <font color="white" face="sans-serif" size="60px">
+            <strong>“RESUMÃO” - UM POUCO DE HTML</strong>
+        </font>
+    </span>
+    <span>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Fhy-5CtVkiM?si=v-Ze_zjwXvMBdbM6" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>    
+    </span>
+</div>
+    
+    <hr>
+    </b><h1 id="inicio">Índice</h1>  
+        <ul style="font-size: 30px;"><font color="red">
+            <li><a href="#introdução">Introdução ao HTML</a></li>            
+            <li><a href="#organização">Organização de Conteúdo</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#formulários">Formulários</a></li>            
+            <li><a href="#tabelas">Tabelas</a></li>
+            <li><a href="#midia">Midias - Imagens e Mídia</a></li>
+            <li><a href="#cores">Cores e formatos</a></li>
+            <li><a href="#html">HTML5 & Novidades</a></li>
+            <li><a href="#acessibilidade">Acessibilidade (WAI-ARIA)</a></li>
+            <li><a href="#robo">Web e Robôs</a></li>            
+            <li><a href="#referências">Referências</a></li>
+            
+            </font>
+        </ul>
+         
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <hr>
+
+        <h2 id="introdução"><strong><U>INTRODUÇÃO AO HTML </U></strong></h2>
+        <p>
+          HTML (HyperText Markup Language) é a "linguagem de marcação" usada para criar páginas da web. 
+          Pense nele como o esqueleto de um site, ou seja é a estrutura da pagina.  
+        </p>
+    
+        <h2 ><strong><U>O QUE SÃO TAGS</U></strong></h2>
+    
+    <p> 
+        As tags são como “comandos” para estruturar a página HTML, dizem ao navegador o que mostrar na página. 
+        Sempre começam com <alguma-coisa> e terminam com </alguma-coisa>, mas tem algumas tags que não presisam 
+        de ser fechadas como o Input e outras que abrem e fecham sozinhas como img. Temos muitos exemplos de tags, vide indice</p>
+   
+    <p> <b>Exemplos de Tags</b>
+      
+         <ul style="font-size: 30px; line-height: 2;">
+            <li><b><code>&lt;b&gt;</code>:</b> deixa o texto em negrito;</li>
+            <li><b><code>&lt;i&gt;</code>:</b> deixa o texto em itálico;</li>
+            <li><b><code>&lt;u&gt;</code>:</b> sublinha o texto;</li>
+            <li><b><code>&lt;mark&gt;</code>:</b> marca o texto como se fosse com marca-texto;</li>
+            <li><b><code>&lt;sup&gt;</code>:</b> texto sobrescrito (tipo potência: 2<sup>2</sup>);</li>
+            <li><b><code>&lt;sub&gt;</code>:</b> texto subscrito (tipo fórmulas químicas: H<sub>2</sub>O);</li>
+            <li><b><code>&lt;strong&gt;</code>:</b> é parecido com &lt;b&gt;, mas também dá importância ao texto, carga semântica;</li>
+            <li><b><code>&lt;small&gt;</code>:</b> deixa o texto menor;</li>
+            <li><b><code>&lt;blockquote&gt;</code>:</b> mostra uma citação longa;</li>
+            <li><b><code>&lt;q&gt;</code>:</b> mostra uma citação curta, com aspas;</li>
+            <li><b><code>&lt;hr&gt;</code>:</b> cria uma linha horizontal;</li>
+            <li><b><code>&lt;img&gt;</code>:</b> mostra uma imagem;</li>
+            <li><b><code>&lt;video&gt;</code>:</b> coloca um vídeo;</li>
+            <li><b><code>&lt;track&gt;</code>:</b> serve para colocar legendas no vídeo;</li>
+            <li><b><code>&lt;iframe&gt;</code>:</b> mostra outra página dentro da sua;</li>
+            <li><b><code>&lt;figure&gt;</code>:</b> agrupa uma imagem e sua legenda;</li>
+            <li><b><code>&lt;figcaption&gt;</code>:</b> legenda de uma figura;</li>
+            <li><b><code>&lt;picture&gt;</code>:</b> mostra imagens que mudam de acordo com o tamanho da tela.</li>
+        </ul>
+    </p>
+    <a href="#inicio"> (Voltar ao inicio)</a>
+    <hr>
+    
+    <h2 id="organização"><strong><U>ORGANIZAÇÃO DE CONTEÚDO</U></strong></h2>
+
+    <p>
+        <b>Classes: (class="...")</b>
+        São como "etiquetas" que você coloca em vários elementos pra estilizar ou controlar vários de uma vez (ex: .destaque { color: red; }).
+        <br><br>
+        <b>ID (id="...")</b>
+        É um identificador único (só pode um por página). Usamos pra links internos ou JavaScript (ex: <code>&lt;div&gt;</code> id="menu">). 
+        <br><br>
+        <b><code>&lt;div&gt;</code>:</b>
+        É um "bloco" genérico pra agrupar conteúdo ou criar seções. Não faz nada visual sozinho, mas ajuda a organizar.
+        <br><br>
+        <b><code>&lt;span&gt;</code>:</b>
+        Igual ao <code>&lt;div&gt;</code>, mas inline (não quebra a linha). Usamos pra estilizar pedaços de texto (ex: <span style="color: blue;">texto</span>).
+        <br><br>
+        <b>Âncoras (links internos):</b> 
+        Link que leva pra outra parte da página.
+        <br><br>
+      
+        
+    </p>
+
+    <a href="#inicio"> (Voltar ao inicio)</a> 
+
+    <hr>
+    <h2 id="listas"><b><u>LISTAS</u></b><br><br></h2>
+    <p>
+        <b>Listas Ordenadas "&lt;ol&gt;":</b> São listas numeradas, por ex: 1 Arroz; 2 Feijão; 3 Macarrão... <br><br>
+        <b>Não ordenadas "&lt;ul&gt;":</b> São listas que são organizadas através de marcadores como bolinhas como aquelas usadas no word.<br>
+    </p>
+    <a href="#inicio"> (Voltar ao inicio)</a>
+
+    <hr>
+    <h2 id="links"><b><u>LINKS</u></b><br><br></h2>
+    <p>
+        Para criar link utilizamos a tag <code>&lt;a&gt;</code>, com essa tag, conseguimos linkar conteúdos da mesma ou de outras páginas <br><br>
+        Ex: <code>&lt;a href="url"&gt;</code> - neste caso url será o endereço da página ou link. <br>
+        Temos duas opção para criar o link, podemos usar os atributos: <br><br>
+        * target="_blank" - Abre o link em outra aba/janela <br><br>
+        * target="_self" - Abre o link na mesma aba (é o comportamento padrão).
+       
+    </p>
+    <a href="#inicio"> (Voltar ao inicio)</a>
+
+    <hr>
+    <h2 id="formulários"><b><u>FORMULÁRIOS</u></b><br><br></h2>
+    <p>
+        <b>&lt;form&gt;</b> → Cria o formulário.<br><br>
+
+        <b>&lt;input&gt;</b> → Campo para digitar.<br><br>
+
+        <b>&lt;input type="checkbox"&gt;</b> → Caixinha de marcar.<br><br>
+
+        <b>&lt;input type="radio"&gt;</b> → Botão de opção única.<br><br>
+
+        <b>&lt;button&gt;</b> → Botão clicável.<br><br>
+
+        <b>&lt;select&gt;</b> → Caixa de seleção (dropdown: "opções de escolha").<br><br>
+
+        <b>&lt;textarea&gt;</b> → Área de texto grande.<br><br>
+
+        <b>&lt;label&gt;</b> → Rótulo do campo.<br><br>
+
+        <b>&lt;fieldset&gt;</b> → Agrupa campos.<br><br>
+
+        <b>&lt;button type="submit"&gt;</b> → Botão de <strong>enviar</strong> formulário.<br><br>
+       
+    </p>
+    <a href="#inicio"> (Voltar ao inicio)</a>
+    
+     <hr>
+    <h2 id="tabelas"><b><u>TABELAS</u></b><br><br></h2>
+    <p>
+        <b>&lt;table&gt;</b> → Começa a tabela.<br><br>
+
+        <b>&lt;tr&gt;</b> → Cria uma linha.<br><br>
+
+        <b>&lt;td&gt;</b> → Cria uma coluna.<br><br>
+
+        <b>&lt;th&gt;</b> → Célula de título (cabeçalho). <br><br>
+
+        <b>&lt;thead&gt;</b> → Cabeçalho da tabela.<br><br>
+
+        <b>&lt;tbody&gt;</b> → Corpo da tabela.<br><br>
+
+        <b>&lt;tfoot&gt;</b> → Rodapé da tabela.<br><br>
+
+        <b>&lt;caption&gt;</b> → Legenda da tabela.<br><br>
+
+        <b>colspan</b> → Mescla colunas (ex: &lt;td colspan="2"&gt;). <br><br>
+
+        <b>rowspan</b> → Mescla linhas (ex: &lt;td rowspan="2"&gt;). <br><br>
+
+        <b>Atributos:</b> border, cellpadding, cellspacing, align.
+       
+    </p>
+    <a href="#inicio"> (Voltar ao inicio)</a>
+
+    <hr>
+    <h2 id="midia"><b><u>MÍDIA (IMAGEM E VÍDEO)</u></b><br><br></h2>
+    <p>
+        <b>&lt;img&gt;</b> → Mostra imagens (use <b>src</b> para o caminho e <b>alt</b> para texto alternativo).<br><br>
+
+        <b>&lt;video&gt;</b> → Mostra vídeos (adicione <b>controls</b> para player). <br><br>
+
+        <b>&lt;track&gt;</b> → Adiciona legenda ao vídeo (ex: legendas .vtt). <br><br>
+
+        <b>&lt;iframe&gt;</b> → Mostra outro site/página dentro da sua.<br><br>
+
+        <b>&lt;embed&gt;</b> → Incorpora conteúdo externo (PDFs, plugins). <br><br>
+
+        <b>&lt;figure&gt;</b> e <b>&lt;figcaption&gt;</b> → Imagem com legenda semântica.<br><br>
+
+        <b>&lt;picture&gt;</b> → Imagem responsiva (muda conforme tamanho da tela). <br><br>
+       
+    </p>
+    <a href="#inicio"> (Voltar ao inicio)</a>
+    
+    <hr>
+    <h2 id="cores"><b><u>CORES E FORMATOS</u></b><br><br></h2>
+    <p>
+        →	<b>width e height:</b> definem o tamanho (largura e altura). <br><br>
+                Podemos usar os diversos formatos de Cores: <br><br>
+            <b>o	rgb (255,0,0)</b> → vermelho <br><br>
+            <b>o	#ff0000 </b>→ vermelho <br><br>
+            <b>o	hsl(0, 100%, 50%)</b> → vermelho <br><br>
+            <b>o	rgba e hsla </b>→ versões com transparência <br><br>
+
+       
+    </p>
+    <a href="#inicio"> (Voltar ao inicio)</a>
+
+    <hr>
+    <h2 id="html"><b><u>HTML 5 & NOVIDADES</u></b><br><br></h2>
+    <p>
+        No HTML5 vieram novas tags semânticas, que ajudam a organizar o conteúdo de forma mais clara: <br><br>
+        
+        <b>&lt;main&gt;</b> → Conteúdo principal da página (deve ser único). <br><br>
+
+        <b>&lt;header&gt;</b> → Cabeçalho da página ou de seções.<br><br>
+
+        <b>&lt;footer&gt;</b> → Rodapé da página ou de seções.<br><br>
+
+        <b>&lt;nav&gt;</b> → Área de navegação (menu de links). <br><br>
+
+        <b>&lt;section&gt;</b> → Seção lógica do conteúdo.<br><br>
+
+        <b>&lt;aside&gt;</b> → Conteúdo complementar/lateral.<br><br>
+
+        <b>&lt;article&gt;</b> → Conteúdo independente (post, notícia). <br><br>
+
+       
+    </p>
+    <a href="#inicio"> (Voltar ao inicio)</a>
+
+    <hr>
+    <h2 id="acessibilidade"><b><u>ACESSIBILIDADE (WAI - ARIA) </u></b><br><br></h2>
+    <p>
+        São atributos que ajudam deficientes visuais com leitores de tela. Por exemplo: <br><br>
+    ☺ ►	aria-hidden="true" → esconde do leitor de tela<br><br>
+    ☺ ►	aria-expanded="false" → diz que está fechado<br><br>
+    ☺ ►	aria-expanded="true" → diz que está aberto<br><br>
+      
+    </p>
+    <a href="#inicio"> (Voltar ao inicio)</a>
+
+    <hr>
+    <h2 id="robo"><b><u>WEB E ROBÔS</u></b><br><br></h2>
+    <p>
+       <b>WEB SCRAPING E CRAWLER</b><br><br>
+       <b>Web scraping:</b> é pegar informações de sites automaticamente (tipo um robô coletando dados). <br><br>
+    	<b>Crawler:</b> é o robô que visita páginas e indexa para os buscadores, tipo o Google Bot. <br><br>
+ 
+       
+    </p>
+    <a href="#inicio"> (Voltar ao inicio)</a>
+
+    <hr>
+    <h2 id="seo"><b><u>SEO (Otimização para mecanismos de busca)</u></b><br><br></h2>
+    <p>
+        É o que fazemos pra o Google encontrar e mostrar bem nosso site na rede web.<br><br> 
+    	<b>SEO:</b> melhorar o site pra aparecer melhor nas buscas. <br><br>
+    	<b>Google Bot:</b> o robô do Google que visita sites. <br><br>
+    	<b>Search Console:</b> ferramenta do Google pra analisar o site. <br><br>
+    	<b>Google Ads:</b> anúncios pagos. <br><br>
+    	<b>Schema.org:</b> marcações no código que ajudam os mecanismos de busca a entender o conteúdo. <br><br>
+
+        
+
+       
+    </p>
+    <a href="#inicio"> (Voltar ao inicio)</a>
+
+    <hr>
+    <h2 id="referências"><b><u>REFERÊNCIAS</u></b><br><br></h2>
+    <p>
+        <strong></b>DIO.ME. </strong> Curso de HTML5. Ministrado por Diogo Mainardes – Especialista: Sênior Developer, Cadmus. 
+        Dísponível em: https://web.dio.me/home. Acesso em: 23 jul. 2025. <a href="https://web.dio.me/home" target="_blank">(acesse aqui)</a> <br><br>
+
+        <strong>W3SCHOOLS.</strong> HTML Tutorial. Disponível em: https://www.w3schools.com/html/. 
+        Acesso em: 23 jul. 2025. <a href="https://www.w3schools.com/html/" target="_blank">(acesse aqui)</a><br><br>
+        
+
+       
+    </p>
+    <a href="#inicio"> (Voltar ao inicio)</a>
+    <hr> <br><br>
+
+</body>
+</html>
